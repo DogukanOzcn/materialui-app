@@ -1,0 +1,23 @@
+[33mcommit 3005bcdb0c1e4157612722b23c989b6baa97875d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Doğukan Özcan <dustalow58@gmail.com>
+Date:   Wed Oct 25 21:39:39 2023 +0300
+
+    MaterialUI özellikleri denendi üzerinde çalışıldı.
+
+[33mcommit e617941d184f4bb88a19f5a16352e079a245b747[m
+Author: Doğukan Özcan <dustalow58@gmail.com>
+Date:   Wed Oct 25 20:43:14 2023 +0300
+
+    MaterialUI Paketi yüklendi.
+
+[33mcommit 8a470115b9e775e38a6a3a7762926c431c9064b6[m
+Author: Doğukan Özcan <dustalow58@gmail.com>
+Date:   Wed Oct 25 17:59:02 2023 +0300
+
+    Components klasörü eklendi,Header.js ve Footer.js dosyaları oluşturuldu
+
+[33mcommit 4ce10644d9767510cecd4ab5bd51be0ccc8e4d72[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Doğukan Özcan <dustalow58@gmail.com>
+Date:   Wed Oct 25 16:59:06 2023 +0300
+
+    Initialize project using Create React App
