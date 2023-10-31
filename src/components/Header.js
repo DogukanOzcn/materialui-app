@@ -3,7 +3,7 @@ import * as React from "react";
 export default function Header() {
   return (
     <div>
-      <h1></h1>
+      <input title="bi şey yaz"></input>
     </div>
   );
 }

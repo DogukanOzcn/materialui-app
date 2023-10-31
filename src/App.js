@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <h1>Hello</h1>
+        <h1></h1>
       </main>
       <Footer/>
     </div>
