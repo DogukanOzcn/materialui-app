@@ -2,8 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 body {
+  align-items: center;
+  text-align: center;
   background: #16222a; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
