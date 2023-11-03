@@ -2,7 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import SignIn from "./components/SignIn/SignIn";
-import NaviComp from "./components/NaviComp";
+import BottomNavi from "./components/BottomNavi"
+import "./index.css"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/signin" element={<SignIn />} />
       </Routes>
     </Router>
+    
   );
 }
 

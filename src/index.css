@@ -23,7 +23,7 @@ body {
   display: flex;
   align-items: flex-start;
   margin: 5px;
-  flex-wrap: wrap;
+  flex-wrap:wrap
 
   
 }
@@ -31,5 +31,5 @@ body {
   color: red !important;
 }
 .card {
-  margin: 20px; /* Kartlar arasındaki boşluğu burada ayarlayabilirsiniz */
+  margin: 15px; /* Kartlar arasındaki boşluğu burada ayarlayabilirsiniz */
 }

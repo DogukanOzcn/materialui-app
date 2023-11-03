@@ -1,5 +1,5 @@
 import * as React from "react";
-import { NavLink ,Link} from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -13,7 +13,6 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import Header from "./Header"
 
 const pages = ["Hakkında", "İletişim", "Ana Sayfa"];
 const settings = ["Giriş Yap"];
@@ -39,7 +38,6 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar position="static">
-      
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
@@ -61,7 +59,7 @@ function ResponsiveAppBar() {
             Doğukan
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" }}}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -116,7 +114,7 @@ function ResponsiveAppBar() {
           >
             Doğukan
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }}}>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
                 key={page}
@@ -151,11 +149,13 @@ function ResponsiveAppBar() {
               onClose={handleCloseUserMenu}
             >
               {settings.map((setting) => (
-                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                 <Link to="/SignIn" style={{ textDecoration: "none" }}> {/* Alt çizgiyi kaldırmak için style özelliğini kullanıyoruz */}
-                   <Typography textAlign="center">{setting}</Typography>
-                 </Link>
-               </MenuItem>
+                <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                  <Link to="/SignIn" style={{ textDecoration: "none" }}>
+                    {" "}
+                    {/* Alt çizgiyi kaldırmak için style özelliğini kullanıyoruz */}
+                    <Typography textAlign="center">{setting}</Typography>
+                  </Link>
+                </MenuItem>
               ))}
             </Menu>
           </Box>

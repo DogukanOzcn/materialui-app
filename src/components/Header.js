@@ -16,6 +16,8 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import "../index.css"
 import NaviComp from "./NaviComp"
+import BottomNavi from "./BottomNavi"
+
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -124,7 +126,6 @@ function getMonthName(month) {
 
 export default function RecipeReviewCard() {
   const [expanded, setExpanded] = React.useState(null);
-  const [buttonId, setButtonId] = React.useState("icnbtn");
   const [myData,setMyData]=React.useState(temp);
 
   const handleButtonClick = (data) => {
@@ -150,10 +151,10 @@ export default function RecipeReviewCard() {
     <div className="card-container">
       <NaviComp/>
       {myData.map((data) => (
-        <Card className="card"  key={data.id} sx={{ maxWidth: 345 }}>
+        <Card className="card"  key={data.id} sx={{maxWidth: 345 }}>
           <CardHeader
             avatar={
-              <Avatar sx={{ bgcolor: red[500] }} aria-label="dogukan">
+              <Avatar alt="Remy Sharp" src="/public/js.jpg" sx={{ bgcolor: red[500] }} aria-label="dogukan">
                 D
               </Avatar>
             }
@@ -208,6 +209,7 @@ export default function RecipeReviewCard() {
           </Collapse>
         </Card>
       ))}
+     <BottomNavi />
     </div>
   );
 }
