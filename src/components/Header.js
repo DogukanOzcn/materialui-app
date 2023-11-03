@@ -15,6 +15,7 @@ import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import "../index.css"
+import NaviComp from "./NaviComp"
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -28,45 +29,65 @@ const ExpandMore = styled((props) => {
 }));
 const temp = [
   {
-    classNames:["icnbtn"],
+    classNames: ["icnbtn"],
     id: 1,
     title: "Javascript",
     image: "js.jpg",
     firsttext:
       "JavaScript, web tarayıcılarında interaktif davranışlar eklemek ve web sitelerini geliştirmek için kullanılan bir programlama dili ve teknolojik ekosistemdir.",
     secondtext:
-      "JavaScript, web geliştirme için kullanılan bir programlama dilidir. Tarayıcılar (web sayfaları üzerindeki etkileşim ve dinamik içerik sağlamak için) ve sunucu tarafı geliştirmeyi (Node.js gibi) destekler. JavaScript, kullanıcı etkileşimi, veri işleme ve web sayfalarının dinamik oluşturulması gibi çeşitli görevler için kullanılır. JavaScript, hafif, tarayıcıda çalışabilen bir dil olarak bilinir ve HTML ve CSS ile birlikte web geliştirmenin temel taşlarından biridir.",
+      "JavaScript, web geliştirme için kullanılan bir programlama dilidir. Tarayıcılar (web sayfaları üzerindeki etkileşim ve dinamik içerik sağlamak için) ve sunucu tarafı geliştirmeyi (Node.js gibi) destekler. JavaScript, kullanıcı etkileşimi, veri işleme ve web sayfalarının dinamik oluşturulması gibi çeşitli görevler için kullanılır. JavaScript, hafif, tarayıcıda çalışabilen bir dil olarak bilinir ve HTML ve CSS ile birlikte web geliştirmenin temel taşlarından biridir."
   },
   {
-    classNames:["icnbtn"],
+    classNames: ["icnbtn"],
     id: 2,
-    title: "Javascript",
-    image: "js.jpg",
+    title: "Vercel",
+    image: "vercel.jpg",
     firsttext:
-      "JavaScript, web tarayıcılarında interaktif davranışlar eklemek ve web sitelerini geliştirmek için kullanılan bir programlama dili ve teknolojik ekosistemdir.",
+      "Vercel, özgürleştirilmiş bir ön uç dağıtım platformu olarak bilinir ve web projelerinizi hızlıca yayınlamanıza olanak tanır.",
     secondtext:
-      "JavaScript, web geliştirme için kullanılan bir programlama dilidir. Tarayıcılar (web sayfaları üzerindeki etkileşim ve dinamik içerik sağlamak için) ve sunucu tarafı geliştirmeyi (Node.js gibi) destekler. JavaScript, kullanıcı etkileşimi, veri işleme ve web sayfalarının dinamik oluşturulması gibi çeşitli görevler için kullanılır. JavaScript, hafif, tarayıcıda çalışabilen bir dil olarak bilinir ve HTML ve CSS ile birlikte web geliştirmenin temel taşlarından biridir.",
+      "Vercel, web projelerini hızlıca dağıtmak ve barındırmak için kullanılan bir platformdur. Sadece ön uç değil, tam bir uygulama geliştirme sürecini destekler ve geliştiricilere büyük kolaylık sağlar."
   },
   {
-    classNames:["icnbtn"],
+    classNames: ["icnbtn"],
     id: 3,
-    title: "Javascript",
-    image: "js.jpg",
+    title: "Next.js",
+    image: "nextjs.jpg",
     firsttext:
-      "JavaScript, web tarayıcılarında interaktif davranışlar eklemek ve web sitelerini geliştirmek için kullanılan bir programlama dili ve teknolojik ekosistemdir.",
+      "Next.js, React tabanlı, hızlı ve SEO dostu bir web uygulama çerçevesidir.",
     secondtext:
-      "JavaScript, web geliştirme için kullanılan bir programlama dilidir. Tarayıcılar (web sayfaları üzerindeki etkileşim ve dinamik içerik sağlamak için) ve sunucu tarafı geliştirmeyi (Node.js gibi) destekler. JavaScript, kullanıcı etkileşimi, veri işleme ve web sayfalarının dinamik oluşturulması gibi çeşitli görevler için kullanılır. JavaScript, hafif, tarayıcıda çalışabilen bir dil olarak bilinir ve HTML ve CSS ile birlikte web geliştirmenin temel taşlarından biridir.",
+      "Next.js, React geliştiricileri için geliştirilen bir web uygulama çerçevesidir. Hızlı yükleme süreleri, SEO dostu yapısı ve birçok özelliği ile ön plana çıkar."
   },
   {
-    classNames:["icnbtn"],
+    classNames: ["icnbtn"],
     id: 4,
-    title: "Javascript",
-    image: "js.jpg",
+    title: "TypeScript",
+    image: "typescript.jpg",
     firsttext:
-      "JavaScript, web tarayıcılarında interaktif davranışlar eklemek ve web sitelerini geliştirmek için kullanılan bir programlama dili ve teknolojik ekosistemdir.",
+      "TypeScript, JavaScript tabanlı güçlü bir programlama dilidir ve kodunuzu daha okunabilir ve güvenilir hale getirir.",
     secondtext:
-      "JavaScript, web geliştirme için kullanılan bir programlama dilidir. Tarayıcılar (web sayfaları üzerindeki etkileşim ve dinamik içerik sağlamak için) ve sunucu tarafı geliştirmeyi (Node.js gibi) destekler. JavaScript, kullanıcı etkileşimi, veri işleme ve web sayfalarının dinamik oluşturulması gibi çeşitli görevler için kullanılır. JavaScript, hafif, tarayıcıda çalışabilen bir dil olarak bilinir ve HTML ve CSS ile birlikte web geliştirmenin temel taşlarından biridir.",
+      "TypeScript, JavaScript geliştiricileri için geliştirilmiş bir programlama dilidir. Stati tip denetimi sağlayarak hataları erken dönemde yakalamanıza yardımcı olur ve büyük projeleri daha yönetilebilir hale getirir."
   },
+  {
+    classNames: ["icnbtn"],
+    id: 5,
+    title: "Prisma",
+    image: "prisma.jpg",
+    firsttext:
+      "Prisma, modern ve veri tabanı odaklı bir ORM (Object-Relational Mapping) aracıdır.",
+    secondtext:
+      "Prisma, veri tabanı işlemlerini kolaylaştıran bir ORM aracıdır. Veri tabanı ile etkileşimi daha basit ve verimli hale getirir, böylece geliştiriciler veri tabanı işlemlerini hızlıca gerçekleştirebilir."
+  },
+  {
+    classNames: ["icnbtn"],
+    id: 6,
+    title: "React Router",
+    image: "reactrouter.jpg",
+    firsttext:
+      "React Router, React uygulamalarında sayfa yönlendirmesi ve yönetimi için kullanılan bir kütüphanedir.",
+    secondtext:
+      "React Router, React tabanlı uygulamalarda sayfa yönlendirmesi yapmak ve uygulama rotalarını tanımlamak için kullanılır. Web uygulamalarını çok sayfalı hale getirir ve kullanıcıların farklı sayfalar arasında gezinmelerini sağlar."
+  }
 ];
 
 // Bugünün tarihini al
@@ -127,8 +148,9 @@ export default function RecipeReviewCard() {
 
   return (
     <div className="card-container">
+      <NaviComp/>
       {myData.map((data) => (
-        <Card key={data.id} sx={{ maxWidth: 345 }}>
+        <Card className="card"  key={data.id} sx={{ maxWidth: 345 }}>
           <CardHeader
             avatar={
               <Avatar sx={{ bgcolor: red[500] }} aria-label="dogukan">
